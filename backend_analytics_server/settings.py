@@ -81,17 +81,7 @@ WSGI_APPLICATION = "backend_analytics_server.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQLDATABASE'),
-        'USER': os.environ.get('MYSQLUSER'),
-        'PASSWORD': os.environ.get('MYSQLPASSWORD'),
-        'HOST': os.environ.get('MYSQLHOST'),
-        'PORT': os.environ.get('MYSQLPORT'),
-    }
-}
-
+DATABASES = { "default": { 'ENGINE': 'django.db.backends.mysql', 'NAME': os.environ.get('MYSQLDATABASE'), 'USER': os.environ.get('MYSQLUSER'), 'PASSWORD': os.environ.get('MYSQLPASSWORD'), 'HOST': os.environ.get('MYSQLHOST'), 'PORT': os.environ.get('MYSQLPORT'), } }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
